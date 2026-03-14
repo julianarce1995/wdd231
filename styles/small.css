@@ -1,10 +1,11 @@
 :root {
-  --primary-color: #215d23;
-  --secondary-color: #d9e9e0;
-  --third-color: #94be92;
-  --hover-color: #1a4218;
+  --primary-color: #1f8122;
+  --secondary-color: #9ad8b5;
+  --third-color: #77bdac;
+  --hover-color: #22531f;
   --white: #ffffff;
   --black: #1f1d1d;
+  --gray: #938d8d;
 }
 
 * {
@@ -12,7 +13,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Winky Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -54,7 +54,7 @@ header {
   align-items: center;
   padding: 0.7rem;
   width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--black);
 }
 
 .header-title img {
@@ -149,7 +149,7 @@ main {
 .student-info {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd;
+  border: 1px solid var(--white);
 }
 
 .about-me h2,
@@ -222,14 +222,14 @@ main {
 }
 
 .border-1 {
-  border: 1px solid #938d8d;
+  border: 1px solid var(--gray);
   border-radius: 0;
   padding: 0.5rem;
   text-align: center;
 }
 
 .border-2 {
-  border: 2px solid #938d8d;
+  border: 2px solid var(--gray);
   border-radius: 0.5rem;
 }
 
