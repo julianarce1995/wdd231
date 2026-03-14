@@ -3,9 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BYU Pathway WDD 231" />
+    <meta name="author" content="Julian David Arce Araujo" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&family=Winky+Sans:ital,wght@0,453;1,453&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
     <title>BYU Pathway</title>
   </head>
   <body>
-    <div>Hi world</div>
+    <header class="header">
+      <div class="header-title">
+        <img
+          src="images/julian-arce-logo.svg"
+          alt="Julian Arce Photo"
+          loading="lazy"
+        />
+        <span>Julian David Arce Araujo</span>
+        <div>
+          <button type="button" id="menu"></button>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li><a class="p-1" href="/">Home</a></li>
+          <li><a class="p-1" href="chamber.html">Chamber Project</a></li>
+          <li><a class="p-1" href="final.html">Final Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="home-title">Home</h1>
+      <div class="home-content">
+        <section class="about-me">
+          <h2 class="about-me-title">About Me</h2>
+          <p class="p-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repellendus, aliquam! Doloremque debitis voluptatibus, est quis rem
+            officia mollitia eos consectetur, odio commodi illo. Aspernatur
+            laudantium sequi ipsum, ab eaque enim. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Repellendus, aliquam! Doloremque
+            debitis voluptatibus, est quis rem officia mollitia eos consectetur,
+            odio commodi illo. Aspernatur laudantium sequi ipsum, ab eaque enim.
+          </p>
+        </section>
+        <section class="student-info">
+          <h2>Student Photo</h2>
+          <div>
+            <img
+              src="images/julian-arce.jpg"
+              alt="Student Photo"
+              loading="lazy"
+            />
+          </div>
+        </section>
+      </div>
+      <section class="courses">
+        <h2 class="course-title">Web certificate courses</h2>
+        <div class="course-buttons">
+          <button id="all-courses" class="border-2">All</button>
+          <button id="cse-courses" class="border-2">CSE</button>
+          <button id="wdd-courses" class="border-2">WDD</button>
+        </div>
+        <div id="course-names" class="course-name"></div>
+        <p>
+          the total credits for course listed above is
+          <span id="total-credits"></span>.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-images">
+        <a href="https://www.linkedin.com/in/julian-david-arce-araujo/">
+          <img
+            src="images/linkedin-brands-solid.png"
+            alt="Julian Arce Photon"
+            loading="lazy"
+          />
+        </a>
+        <a href="https://github.com/julianarce1995/wdd231">
+          <img
+            src="images/square-github-brands-solid.png"
+            alt="Julian Arce Photon"
+            loading="lazy"
+          />
+        </a>
+        <a href="https://x.com/?lang=es&q=from%3Ajulianarce1995">
+          <img
+            src="images/x-twitter-brands-solid.png"
+            alt="Julian Arce Photon"
+            loading="lazy"
+          />
+        </a>
+      </section>
+      <section class="footer-info">
+        <p>
+          ©
+          <span id="currentyear"></span>
+          - Julian David Arce Araujo - Valle del Cauca-Colombia
+        </p>
+        <span id="lastModified"></span>
+      </section>
+    </footer>
   </body>
 </html>
