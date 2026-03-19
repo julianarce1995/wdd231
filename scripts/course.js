@@ -73,70 +73,38 @@ const allCoursesButton = document.getElementById("all-courses");
 const cseCoursesButton = document.getElementById("cse-courses");
 const wddCoursesButton = document.getElementById("wdd-courses");
 const totalCreditsElement = document.getElementById("total-credits");
-let total = 0;
 
-allCoursesButton.addEventListener("click", () => {
+function renderCourses(courseArray) {
   selectElement.innerHTML = "";
-  total = 0;
-  courses.forEach((course) => {
+  courseArray.forEach((course) => {
     const option = document.createElement("option");
+    option.value = course.subject + "-" + course.number;
     option.textContent = course.subject + "-" + course.number;
     option.classList.add("border-1");
     if (course.completed) {
       option.classList.add("completed");
     }
-    total += course.credits;
     selectElement.appendChild(option);
   });
-  totalCreditsElement.textContent = total;
-});
+
+  const totalCredits = courseArray.reduce(
+    (sum, course) => sum + course.credits,
+    0,
+  );
+  totalCreditsElement.textContent = totalCredits;
+}
+
+allCoursesButton.addEventListener("click", () => renderCourses(courses));
 
 cseCoursesButton.addEventListener("click", () => {
-  selectElement.innerHTML = "";
-  total = 0;
-  courses
-    .filter((course) => course.subject.includes("CSE"))
-    .forEach((course) => {
-      const option = document.createElement("option");
-      option.textContent = course.subject + "-" + course.number;
-      if (course.completed) {
-        option.classList.add("completed");
-      }
-      total += course.credits;
-      option.classList.add("border-1");
-      selectElement.appendChild(option);
-    });
-  totalCreditsElement.textContent = total;
+  const cseCourses = courses.filter((course) => course.subject === "CSE");
+  renderCourses(cseCourses);
 });
 
 wddCoursesButton.addEventListener("click", () => {
-  selectElement.innerHTML = "";
-  total = 0;
-  courses
-    .filter((course) => course.subject.includes("WDD"))
-    .forEach((course) => {
-      const option = document.createElement("option");
-      option.textContent = course.subject + "-" + course.number;
-      if (course.completed) {
-        option.classList.add("completed");
-      }
-      total += course.credits;
-      option.classList.add("border-1");
-      selectElement.appendChild(option);
-    });
-  totalCreditsElement.textContent = total;
+  const wddCourses = courses.filter((course) => course.subject === "WDD");
+  renderCourses(wddCourses);
 });
 
-courses.forEach((course) => {
-  const option = document.createElement("option");
-  option.value = course.subject + "-" + course.number;
-  option.textContent = course.subject + "-" + course.number;
-  option.classList.add("border-1");
-  if (course.completed) {
-    option.classList.add("completed");
-  }
-  total += course.credits;
-  selectElement.appendChild(option);
-});
-
-totalCreditsElement.textContent = total;
+// Initial load with all courses
+renderCourses(courses);
