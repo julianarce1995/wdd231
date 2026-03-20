@@ -57,7 +57,7 @@ function displayMembers(members) {
 
 async function loadMembers() {
   try {
-    const response = await fetch("scripts/data/members.json");
+    const response = await fetch("data/members.json");
     if (!response.ok) {
       throw new Error(`HTTP error ${response.status}`);
     }
