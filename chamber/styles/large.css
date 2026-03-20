@@ -1,0 +1,60 @@
+@media (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-title {
+    justify-content: center;
+  }
+
+  .navigation {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+  }
+
+  .navigation li a:hover {
+    color: var(--white);
+    background-color: var(--hover-color);
+    font-size: 1rem;
+    border-radius: 1rem;
+  }
+  .navbar {
+    padding-right: 1rem;
+  }
+
+  .navbar a {
+    border: none;
+  }
+
+  .list .card-content {
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    padding: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1rem 5rem;
+    gap: 1rem;
+  }
+
+  .footer-info,
+  .footer-images {
+    width: 30%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 60.5em) {
+}

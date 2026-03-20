@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="chamber project for BYU Pathway WDD 231, showcasing web design skills and course achievements."
+    />
+    <meta name="author" content="Julian David Arce Araujo" />
+    <meta property="og:description" content="Chamber " />
+    <meta
+      property="og:image"
+      content="https://www.churchofjesuschrist.org/imgs/45e59c1c726d11ec9eb5eeeeac1ea79d5f76a9ce/full/!1280%2C674/0/default"
+    />
+    <meta
+      property="og:title"
+      content="Homepage - The Church of Jesus Christ of Latter-day Saints"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&family=Winky+Sans:ital,wght@0,453;1,453&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <title>BYU Pathway</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-title">
+        <img
+          src="images/julian-arce-logo.svg"
+          alt="Julian Arce Photo"
+          loading="lazy"
+        />
+        <span>Julian Arce</span>
+      </div>
+      <div class="menu">
+        <button type="button" id="menu"></button>
+      </div>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li><a class="p-1" href="/">Home</a></li>
+          <li><a class="p-1" href="directory.html">Directory</a></li>
+          <li><a class="p-1" href="join.html">join</a></li>
+          <li><a class="p-1" href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="view-toggle">
+        <button id="gridView" class="button" type="button" aria-pressed="true">
+          Grid View
+        </button>
+        <button id="listView" class="button" type="button" aria-pressed="false">
+          List View
+        </button>
+      </div>
+      <div id="cards"></div>
+    </main>
+    <footer>
+      <div class="footer-info">
+        <span>Napoles Chamber of Commerce</span>
+        <span>Calle 123, Ciudad</span>
+        <span>Cali Valle del Cauca</span>
+        <span>Email: info@napoleschamber.com</span>
+        <span>Teléfono: (123) 456-7890</span>
+      </div>
+      <section class="footer-images">
+        <a href="https://www.linkedin.com/in/julian-david-arce-araujo/">
+          <img
+            src="images/linkedin-brands-solid.png"
+            alt="linkedin logo"
+            loading="lazy"
+          />
+        </a>
+        <a href="https://github.com/julianarce1995/wdd231">
+          <img
+            src="images/square-github-brands-solid.png"
+            alt="GitHub logo"
+            loading="lazy"
+          />
+        </a>
+        <a href="https://x.com/?lang=es&q=from%3Ajulianarce1995">
+          <img
+            src="images/x-twitter-brands-solid.png"
+            alt="X logo"
+            loading="lazy"
+          />
+        </a>
+      </section>
+      <section class="footer-info">
+        <span>WDD 231 Class Project</span>
+        <p>
+          ©
+          <span id="currentyear"></span>
+          Napoles Chamber of Commerce
+        </p>
+        <span id="lastModified"></span>
+      </section>
+    </footer>
+  </body>
+</html>
