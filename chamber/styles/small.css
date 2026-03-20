@@ -63,13 +63,13 @@ ul {
   font-size: 2rem;
   border: 0;
   background: none;
-  color: var(--black);
+  color: var(--white);
   padding: 0 1rem;
 }
 
 #menu::before {
   content: "☰";
-  color: var(--black);
+  color: var(--white);
 }
 
 #menu.open::before {
@@ -148,7 +148,7 @@ ul {
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 16px var(--black);
 }
 
 .card-image {
@@ -192,12 +192,12 @@ ul {
 }
 
 .grid-cards .card {
-  border: 1px solid rgba(147, 141, 141, 0.35);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--gray);
+  box-shadow: 0 2px 8px var(--black);
 }
 
 .list .card {
-  border-bottom: 1px solid rgba(147, 141, 141, 0.35);
+  border-bottom: 1px solid var(--gray);
   box-shadow: none;
   display: block;
   padding: 0;
