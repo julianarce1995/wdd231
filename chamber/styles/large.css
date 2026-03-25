@@ -54,6 +54,15 @@
     width: 30%;
     justify-content: center;
   }
+
+  /* Home Styles */
+  .container {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .company-spotlights #company-spotlight {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 60.5em) {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="chamber project for BYU Pathway WDD 231, showcasing web design skills and course achievements."
+      content="chamber project home page for BYU Pathway WDD 231, showcasing web design skills and course achievements."
     />
     <meta name="author" content="Julian David Arce Araujo" />
     <meta
@@ -19,7 +19,7 @@
     />
     <meta
       property="og:description"
-      content="Discover Napoles Chamber member directory with trusted local businesses, complete with responsive grid and list views for fast browsing and engagement."
+      content="Discover Napoles Chamber members and their contact information."
     />
     <meta
       property="og:image"
@@ -35,10 +35,12 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/large.css" />
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/company.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <title>Directory | BYU Pathway</title>
+    <title>Home | BYU Pathway</title>
   </head>
   <body>
     <header class="header">
@@ -63,16 +65,31 @@
       </nav>
     </header>
     <main>
-      <div class="view-toggle">
-        <button id="gridView" class="button" type="button" aria-pressed="true">
-          Grid View
-        </button>
-        <button id="listView" class="button" type="button" aria-pressed="false">
-          List View
-        </button>
+      <section class="home">
+        <img src="images/hero-image.jpg" alt="hero image" loading="lazy" />
+        <div>
+          <h1>Home</h1>
+          <a href="join.html" class="button">Join Us</a>
+        </div>
+      </section>
+      <div class="container">
+        <section class="current-event">
+          <h2>current event(s) section</h2>
+          <div id="current-event"></div>
+        </section>
+        <section class="weather-section">
+          <h2>Weather section</h2>
+          <div id="weather-section"></div>
+        </section>
+        <section class="weather-forecast">
+          <h2>Weather Forecast</h2>
+          <div id="weather-forecast"></div>
+        </section>
       </div>
-      <h1>Directory</h1>
-      <div id="cards"></div>
+      <section class="company-spotlights">
+        <h2>Company Spotlights</h2>
+        <div id="company-spotlight"></div>
+      </section>
     </main>
     <footer>
       <div class="footer-info">
@@ -82,7 +99,7 @@
         <span>Email: info@napoleschamber.com</span>
         <span>Teléfono: (123) 456-7890</span>
       </div>
-      <section class="footer-images">
+      <div class="footer-images">
         <a href="https://www.linkedin.com/in/julian-david-arce-araujo/">
           <img
             src="images/linkedin-brands-solid.png"
@@ -104,8 +121,8 @@
             loading="lazy"
           />
         </a>
-      </section>
-      <section class="footer-info">
+      </div>
+      <div class="footer-info">
         <span>WDD 231 Class Project</span>
         <p>
           ©
@@ -113,7 +130,7 @@
           Napoles Chamber of Commerce
         </p>
         <span id="lastModified"></span>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

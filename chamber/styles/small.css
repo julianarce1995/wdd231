@@ -20,7 +20,7 @@
 
 a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
   cursor: pointer;
   font-size: 1rem;
 }
@@ -257,4 +257,77 @@ footer {
   margin-bottom: 1rem;
   padding: 1rem;
   box-shadow: 0 2px 8px var(--gray);
+}
+/* Home Styles */
+
+.home img {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.home div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.current-event,
+.weather-section,
+.weather-forecast,
+.card-box {
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px var(--black);
+  color: var(--black);
+  overflow: hidden;
+}
+
+.current-event h2,
+.weather-section h2,
+.weather-forecast h2,
+.company-spotlights h2 {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: var(--white);
+}
+
+.company-spotlights h2 {
+  margin-bottom: 1rem;
+}
+
+#current-event,
+#weather-section,
+#weather-forecast {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.company-spotlights {
+  margin: 1rem;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card-box img {
+  width: 10%;
+}
+
+.company-spotlights #company-spotlight {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
