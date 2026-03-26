@@ -63,6 +63,10 @@
   .company-spotlights #company-spotlight {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .home img {
+    height: 20vh;
+  }
 }
 
 @media (min-width: 60.5em) {
