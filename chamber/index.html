@@ -28,19 +28,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&family=Winky+Sans:ital,wght@0,453;1,453&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="preload" href="styles/normalize.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/normalize.css"></noscript>
+    <link rel="preload" href="styles/normalize.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/normalize.css"></noscript>
+    <link rel="preload" href="styles/small.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/small.css"></noscript>
+    <link rel="preload" href="styles/large.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/large.css"></noscript>
     <script src="scripts/company.js" defer></script>
     <script src="scripts/events.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <title>Home | BYU Pathway</title>
+    <title>Home | Chamber of Commerce</title>
   </head>
   <body>
     <header class="header">
@@ -53,11 +59,11 @@
         <span>Chamber of Commerce</span>
       </div>
       <div class="menu">
-        <button type="button" id="menu"></button>
+        <button type="button" id="menu" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation"></button>
       </div>
       <nav class="navbar">
-        <ul class="navigation">
-          <li><a class="p-1" href="index.html">Home</a></li>
+        <ul class="navigation" id="navigation">
+          <li><a class="p-1 active" href="index.html">Home</a></li>
           <li><a class="p-1" href="directory.html">Directory</a></li>
           <li><a class="p-1" href="join.html">join</a></li>
           <li><a class="p-1" href="discover.html">Discover</a></li>
@@ -66,8 +72,7 @@
     </header>
     <main>
       <section class="home">
-        <img src="images/hero-image.jpg" alt="hero image" loading="lazy" />
-        <div>
+        <div class="hero-image">
           <h1>Home</h1>
           <a href="join.html" class="button">Join Us</a>
         </div>
@@ -102,21 +107,27 @@
       <div class="footer-images">
         <a href="https://www.linkedin.com/in/julian-david-arce-araujo/">
           <img
-            src="images/linkedin-brands-solid.png"
+            src="images/linkedin.png"
+            width="32"
+            height="32"
             alt="linkedin logo"
             loading="lazy"
           />
         </a>
         <a href="https://github.com/julianarce1995/wdd231">
           <img
-            src="images/square-github-brands-solid.png"
+            src="images/github-logo.png"
+            width="32"
+            height="32"
             alt="GitHub logo"
             loading="lazy"
           />
         </a>
         <a href="https://x.com/?lang=es&q=from%3Ajulianarce1995">
           <img
-            src="images/x-twitter-brands-solid.png"
+            src="images/twitter.png"
+            width="32"
+            height="32"
             alt="X logo"
             loading="lazy"
           />

@@ -1,7 +1,7 @@
 [
   {
     "name": "Horizon Web Studio",
-    "image": "horizon-web-studio.jpg",
+    "image": "horizon-web-studio.webp",
     "phone": "+1-619-555-0142",
     "address": "1234 Creative Ave, San Diego, CA 92101",
     "website": "https://horizonwebstudio.com",
@@ -11,7 +11,7 @@
   },
   {
     "name": "GreenLeaf Materials",
-    "image": "greenleaf-materials.jpg",
+    "image": "greenleaf-materials.webp",
     "phone": "+1-503-555-9780",
     "address": "789 Eco Park Blvd., Portland, OR 97214",
     "website": "https://greenleafmaterials.com",
@@ -21,7 +21,7 @@
   },
   {
     "name": "ByteSpark Technologies",
-    "image": "bytespark-technologies.jpg",
+    "image": "bytespark-technologies.webp",
     "phone": "+1-512-555-3321",
     "address": "410 Silicon Way, Austin, TX 78701",
     "website": "https://bytespark.tech",
@@ -31,7 +31,7 @@
   },
   {
     "name": "Café Solstice",
-    "image": "cafe-solstice.jpg",
+    "image": "cafe-solstice.webp",
     "phone": "+1-303-555-7703",
     "address": "22 Morning St, Boulder, CO 80302",
     "website": "https://cafesolstice.com",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Aurora Fitness",
-    "image": "aurora-fitness.jpg",
+    "image": "aurora-fitness.webp",
     "phone": "+1-407-555-2238",
     "address": "600 Wellness Dr, Orlando, FL 32801",
     "website": "https://aurorafitness.com",
@@ -51,7 +51,7 @@
   },
   {
     "name": "Mirage Media",
-    "image": "mirage-media.jpg",
+    "image": "mirage-media.webp",
     "phone": "+1-215-555-1602",
     "address": "1100 Midtown Row, Philadelphia, PA 19103",
     "website": "https://miragemedia.co",
@@ -61,7 +61,7 @@
   },
   {
     "name": "Peak Data Analytics",
-    "image": "peak-data-analytics.jpg",
+    "image": "peak-data-analytics.webp",
     "phone": "+1-617-555-4510",
     "address": "5 Data Plaza, Boston, MA 02108",
     "website": "https://peakdata.ai",
@@ -71,7 +71,7 @@
   },
   {
     "name": "Stellar Events Co.",
-    "image": "stellar-events.jpg",
+    "image": "stellar-events.webp",
     "phone": "+1-702-555-9920",
     "address": "900 Celebration Way, Las Vegas, NV 89101",
     "website": "https://stellarevents.co",

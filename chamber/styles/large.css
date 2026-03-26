@@ -52,6 +52,7 @@
   .footer-info,
   .footer-images {
     width: 30%;
+    height: 30%;
     justify-content: center;
   }
 
@@ -62,6 +63,11 @@
 
   .company-spotlights #company-spotlight {
     grid-template-columns: 1fr 1fr 1fr;
+    min-height: 15rem;
+  }
+
+  .company-spotlights {
+    min-height: 22rem;
   }
 }
 

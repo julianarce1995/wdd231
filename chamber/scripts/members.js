@@ -40,7 +40,7 @@ function displayMembers(members) {
 
     card.innerHTML = `
       <div class="card-content">
-        <img class="card-image" src="${member.image ? `images/${member.image}` : "images/default.png"}" alt="${member.name} logo" loading="lazy" />
+        <img class="card-image" src="${member.image ? `images/${member.image}` : "images/default.png"}" alt="${member.name} logo" width="612" height="408" loading="lazy" />
         <h2>${member.name}</h2>
         <p class="meta"><span>Category:</span> ${member.category || "N/A"}</p>
         <p class="description"><span>Description:</span> ${member.description || "No description available."}</p>

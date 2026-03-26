@@ -15,7 +15,7 @@ function loadCompanySpotlights(data) {
     spotlight.innerHTML = `
     <div class="card-box">
       <span>Name: ${element.name}</span>
-      <img src="images/${element.image}" alt="${element.name}" loading="lazy"></img>
+      <img src="images/${element.image}" alt="${element.name}" width="612" height="408" fetchpriority="high" />
       <span>Phone: ${element.phone}</span>
       <span>Address: ${element.address}</span>
       <span>Membership: ${element.membership == 2 ? "Silver" : "Gold"}</span>

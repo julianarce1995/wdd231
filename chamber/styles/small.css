@@ -47,6 +47,10 @@ ul {
   padding: 1rem;
 }
 
+.header-title span {
+  text-wrap: nowrap;
+}
+
 .header img {
   width: 50px;
   height: 50px;
@@ -103,6 +107,12 @@ ul {
 .navigation a {
   color: var(--white);
   font-size: 1rem;
+}
+
+.navigation a.active {
+  background-color: var(--hover-color);
+  border-radius: 1rem;
+  font-weight: 700;
 }
 
 .button {
@@ -260,17 +270,32 @@ footer {
 }
 /* Home Styles */
 
-.home img {
-  width: 100%;
-  height: 10rem;
+.home {
   margin-bottom: 1rem;
 }
 
-.home div {
+.hero-image {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
   gap: 1rem;
+  padding: 1rem;
+  background-image:
+    linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 45%)),
+    url("../images/hero-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image h1 {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.hero-image .button {
+  white-space: nowrap;
 }
 
 .container {
@@ -323,11 +348,23 @@ footer {
 }
 
 .card-box img {
-  width: 10%;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
 }
 
 .company-spotlights #company-spotlight {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  min-height: 40rem;
+}
+
+#lastModified {
+  display: block;
+  min-height: 1.25rem;
+}
+
+.footer-info:last-child {
+  min-height: 5.5rem;
 }
