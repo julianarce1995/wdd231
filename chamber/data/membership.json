@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "NP",
+    "cost": 0,
+    "description": "No-fee nonprofit membership for qualifying organizations.",
+    "benefits": [
+      "Basic listing in the chamber directory",
+      "Invitations to community networking events",
+      "Access to chamber newsletter and announcements"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Bronze",
+    "cost": 250,
+    "description": "Entry-level business membership at $250 per year.",
+    "benefits": [
+      "Everything in NP",
+      "5% discount on chamber-sponsored events",
+      "Member pricing for one annual training workshop",
+      "Enhanced directory listing with business logo"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Silver",
+    "cost": 500,
+    "description": "Growth membership at $500 per year with stronger visibility.",
+    "benefits": [
+      "Everything in Bronze",
+      "10% discount on chamber-sponsored events",
+      "Two complimentary professional training sessions",
+      "Quarterly spotlight post on chamber social channels",
+      "Priority placement in the online member directory"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Gold",
+    "cost": 1000,
+    "description": "Premium membership at $1000 per year with maximum exposure.",
+    "benefits": [
+      "Everything in Silver",
+      "20% discount on chamber-sponsored events",
+      "VIP access to special events and executive networking receptions",
+      "Four complimentary advanced training workshops",
+      "Monthly homepage spotlight position",
+      "Featured placement in chamber newsletter and directory"
+    ]
+  }
+]

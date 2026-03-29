@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="chamber project home page for BYU Pathway WDD 231, showcasing web design skills and course achievements."
+    />
+    <meta name="author" content="Julian David Arce Araujo" />
+    <meta
+      property="og:url"
+      content="https://julianarce1995.github.io/wdd231/chamber/directory.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Napoles Chamber Directory | BYU Pathway WDD231"
+    />
+    <meta
+      property="og:description"
+      content="Discover Napoles Chamber members and their contact information."
+    />
+    <meta
+      property="og:image"
+      content="https://julianarce1995.github.io/wdd231/chamber/images/yandy-subary.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&family=Winky+Sans:ital,wght@0,453;1,453&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="preload"
+      href="styles/normalize.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles/normalize.css" /></noscript>
+    <link
+      rel="preload"
+      href="styles/normalize.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles/normalize.css" /></noscript>
+    <link
+      rel="preload"
+      href="styles/small.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles/small.css" /></noscript>
+    <link
+      rel="preload"
+      href="styles/large.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles/large.css" /></noscript>
+    <script src="scripts/membership.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <title>Home | Chamber of Commerce</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-title">
+        <img
+          src="images/julian-arce-logo.svg"
+          alt="Julian Arce Photo"
+          loading="lazy"
+        />
+        <span>Chamber of Commerce</span>
+      </div>
+      <div class="menu">
+        <button
+          type="button"
+          id="menu"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        ></button>
+      </div>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li><a class="p-1" href="index.html">Home</a></li>
+          <li><a class="p-1" href="directory.html">Directory</a></li>
+          <li><a class="p-1 active" href="join.html">Join</a></li>
+          <li><a class="p-1" href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="join-main">
+        <form method="GET" action="thankyou.html" class="designOne">
+          <div>
+            <label for="first-name">First Name </label>
+            <input
+              id="first-name"
+              type="text"
+              required
+              name="first"
+              title="Your First Name"
+              autocomplete="given-name"
+              placeholder="Example: John"
+            />
+          </div>
+
+          <div>
+            <label for="last-name">Last Name </label>
+            <input
+              id="last-name"
+              type="text"
+              required
+              name="last"
+              title="Your Last Name"
+              autocomplete="family-name"
+              placeholder="Example: Doe"
+            />
+          </div>
+
+          <div>
+            <label for="organizational-title">Organizational Title </label>
+            <input
+              id="organizational-title"
+              type="text"
+              name="organizational-title"
+              title="Your Organizational Title"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\- ]{7,}"
+              placeholder="Your Organizational Title"
+            />
+          </div>
+
+          <div>
+            <label for="email">Email </label>
+            <input
+              id="email"
+              type="email"
+              required
+              name="email"
+              autocomplete="email"
+              title="Your Email"
+              placeholder="john89@gmail.com"
+            />
+          </div>
+
+          <div>
+            <label for="phone">Phone </label>
+            <input
+              id="phone"
+              type="tel"
+              required
+              name="phone"
+              title="Your Phone Number"
+              autocomplete="tel"
+              placeholder="31245647"
+            />
+          </div>
+
+          <div>
+            <label for="company">Business / Organization's Name </label>
+            <input
+              id="company"
+              type="text"
+              required
+              name="company"
+              title="Your Company Name"
+              autocomplete="organization"
+              placeholder="Your Company Name"
+            />
+          </div>
+
+          <div>
+            <label for="membership-level">Membership level</label>
+            <select name="membership-level" required id="membership-level">
+              <option value="">Select Membership Level</option>
+              <option value="NP">NP</option>
+              <option value="Bronze">Bronze</option>
+              <option value="Silver">Silver</option>
+              <option value="Gold">Gold</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="description">Description</label>
+            <textarea
+              id="description"
+              title="Description"
+              name="description"
+              placeholder="Add a brief description."
+            ></textarea>
+          </div>
+
+          <div>
+            <input id="timestamp" type="hidden" name="timestamp" />
+          </div>
+
+          <div>
+            <input type="submit" value="Schedule An Appointment" />
+          </div>
+        </form>
+        <div id="cards" class="grid-cards"></div>
+        <div>
+          <dialog id="dialog" class="dialog"></dialog>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-info">
+        <span>Napoles Chamber of Commerce</span>
+        <span>Calle 123, Ciudad</span>
+        <span>Cali Valle del Cauca</span>
+        <span>Email: info@napoleschamber.com</span>
+        <span>Teléfono: (123) 456-7890</span>
+      </div>
+      <div class="footer-images">
+        <a href="https://www.linkedin.com/in/julian-david-arce-araujo/">
+          <img
+            src="images/linkedin.png"
+            width="32"
+            height="32"
+            alt="linkedin logo"
+            loading="lazy"
+          />
+        </a>
+        <a href="https://github.com/julianarce1995/wdd231">
+          <img
+            src="images/github-logo.png"
+            width="32"
+            height="32"
+            alt="GitHub logo"
+            loading="lazy"
+          />
+        </a>
+        <a href="https://x.com/?lang=es&q=from%3Ajulianarce1995">
+          <img
+            src="images/twitter.png"
+            width="32"
+            height="32"
+            alt="X logo"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <div class="footer-info">
+        <span>WDD 231 Class Project</span>
+        <p>
+          ©
+          <span id="currentyear"></span>
+          Napoles Chamber of Commerce
+        </p>
+        <span id="lastModified"></span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="chamber project for BYU Pathway WDD 231, showcasing web design skills and course achievements."
+      content="chamber project home page for BYU Pathway WDD 231, showcasing web design skills and course achievements."
     />
     <meta name="author" content="Julian David Arce Araujo" />
     <meta
@@ -19,7 +19,7 @@
     />
     <meta
       property="og:description"
-      content="Discover Napoles Chamber member directory with trusted local businesses, complete with responsive grid and list views for fast browsing and engagement."
+      content="Discover Napoles Chamber members and their contact information."
     />
     <meta
       property="og:image"
@@ -28,17 +28,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&family=Winky+Sans:ital,wght@0,453;1,453&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/large.css" />
-    <script src="scripts/members.js" defer></script>
+    <link
+      rel="preload"
+      href="styles/normalize.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles/normalize.css" /></noscript>
+    <link
+      rel="preload"
+      href="styles/normalize.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles/normalize.css" /></noscript>
+    <link
+      rel="preload"
+      href="styles/small.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles/small.css" /></noscript>
+    <link
+      rel="preload"
+      href="styles/large.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles/large.css" /></noscript>
+    <script src="scripts/params.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <title>Directory | Chamber of Commerce</title>
+    <title>Home | Chamber of Commerce</title>
   </head>
   <body>
     <header class="header">
@@ -51,28 +77,27 @@
         <span>Chamber of Commerce</span>
       </div>
       <div class="menu">
-        <button type="button" id="menu"></button>
+        <button
+          type="button"
+          id="menu"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        ></button>
       </div>
       <nav class="navbar">
         <ul class="navigation">
           <li><a class="p-1" href="index.html">Home</a></li>
-          <li><a class="p-1 active" href="directory.html">Directory</a></li>
+          <li><a class="p-1" href="directory.html">Directory</a></li>
           <li><a class="p-1" href="join.html">Join</a></li>
           <li><a class="p-1" href="discover.html">Discover</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="view-toggle">
-        <button id="gridView" class="button" type="button" aria-pressed="true">
-          Grid View
-        </button>
-        <button id="listView" class="button" type="button" aria-pressed="false">
-          List View
-        </button>
+      <div class="grid-cards">
+        <div id="params" class="card"></div>
       </div>
-      <h1>Directory</h1>
-      <div id="cards"></div>
     </main>
     <footer>
       <div class="footer-info">
@@ -82,10 +107,12 @@
         <span>Email: info@napoleschamber.com</span>
         <span>Teléfono: (123) 456-7890</span>
       </div>
-      <section class="footer-images">
+      <div class="footer-images">
         <a href="https://www.linkedin.com/in/julian-david-arce-araujo/">
           <img
             src="images/linkedin.png"
+            width="32"
+            height="32"
             alt="linkedin logo"
             loading="lazy"
           />
@@ -93,6 +120,8 @@
         <a href="https://github.com/julianarce1995/wdd231">
           <img
             src="images/github-logo.png"
+            width="32"
+            height="32"
             alt="GitHub logo"
             loading="lazy"
           />
@@ -100,12 +129,14 @@
         <a href="https://x.com/?lang=es&q=from%3Ajulianarce1995">
           <img
             src="images/twitter.png"
+            width="32"
+            height="32"
             alt="X logo"
             loading="lazy"
           />
         </a>
-      </section>
-      <section class="footer-info">
+      </div>
+      <div class="footer-info">
         <span>WDD 231 Class Project</span>
         <p>
           ©
@@ -113,7 +144,7 @@
           Napoles Chamber of Commerce
         </p>
         <span id="lastModified"></span>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
