@@ -195,19 +195,14 @@ ul {
 }
 
 .grid-cards .card {
-  border: 1px solid var(--gray);
-  box-shadow: 0 2px 8px var(--black);
-}
-
-.grid-cards .card {
-  border-bottom: 1px solid var(--gray);
-  box-shadow: none;
   display: block;
   padding: 0;
   margin-bottom: 0.5rem;
   opacity: 0;
   transform: translateY(25px);
   animation: fadeInUp 0.9s ease forwards;
+  border: 1px solid var(--gray);
+  box-shadow: 0 2px 8px var(--black);
 }
 
 @keyframes fadeInUp {
@@ -374,61 +369,63 @@ footer {
 
 form {
   margin: 1rem 2%;
+}
 
-  label {
-    display: block;
-    font-size: 0.8rem;
-    color: purple;
-    padding-top: 0.2rem;
-  }
+form label {
+  display: block;
+  font-size: 0.8rem;
+  color: purple;
+  padding-top: 0.2rem;
+}
 
-  h3 {
-    font-size: 0.9rem;
-    color: #e07a5f;
-    margin: 1.5rem 0 0.2rem 0;
-    border-bottom: 1px solid #eee;
-  }
+form h3 {
+  font-size: 0.9rem;
+  color: #e07a5f;
+  margin: 1.5rem 0 0.2rem 0;
+  border-bottom: 1px solid #eee;
+}
 
-  input[type="text"],
-  input[type="tel"],
-  input[type="date"],
-  input[type="email"],
-  select {
-    display: block;
-    margin: 0.1rem 0 1rem 0;
-    padding: 0.3rem;
-    border: 1px solid #999;
-    border-radius: 4px;
-    border-left-width: 5px;
-    border-left-color: #555;
-    font-size: 1rem;
-    color: #3d405b;
-    width: 250px;
-  }
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="email"],
+form select {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  padding: 0.3rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color: #555;
+  font-size: 1rem;
+  color: #3d405b;
+  width: 250px;
+}
 
-  input:required {
-    border-left-color: #d70000;
-  }
-  input:focus {
-    border-left-color: black;
-    outline: none;
-  }
-  input:required:valid {
-    border-left-color: green;
-  }
+form input:required {
+  border-left-color: #d70000;
+}
 
-  input[type="submit"] {
-    border: none;
-    text-align: center;
-    background-color: #3d405b;
-    color: white;
-    border-radius: 1rem;
-    padding: 0.75rem 1.5rem;
-    margin: 2rem 0;
-    font-size: 1.2rem;
-    -webkit-appearance: none;
-    appearance: none;
-  }
+form input:focus {
+  border-left-color: black;
+  outline: none;
+}
+
+form input:required:valid {
+  border-left-color: green;
+}
+
+form input[type="submit"] {
+  border: none;
+  text-align: center;
+  background-color: #3d405b;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 input:-webkit-autofill {
