@@ -488,3 +488,120 @@ dialog::backdrop {
   align-items: center;
   justify-content: center;
 }
+
+.visit-banner {
+  background-color: var(--secondary-color);
+  color: var(--black);
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-top: 3px solid var(--primary-color);
+}
+
+.discover-section {
+  padding: 1rem;
+}
+
+.discover-title {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--third-color);
+  padding-bottom: 0.5rem;
+}
+
+/* Small – 320px to 640px: single stacked column */
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.discover-card:nth-child(1) {
+  grid-area: card1;
+}
+.discover-card:nth-child(2) {
+  grid-area: card2;
+}
+.discover-card:nth-child(3) {
+  grid-area: card3;
+}
+.discover-card:nth-child(4) {
+  grid-area: card4;
+}
+.discover-card:nth-child(5) {
+  grid-area: card5;
+}
+.discover-card:nth-child(6) {
+  grid-area: card6;
+}
+.discover-card:nth-child(7) {
+  grid-area: card7;
+}
+.discover-card:nth-child(8) {
+  grid-area: card8;
+}
+
+.discover-card {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  border: 1px solid var(--gray);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.discover-card figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.discover-card figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.discover-card-body {
+  padding: 0.85rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.discover-card h2 {
+  color: var(--primary-color);
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.discover-card address {
+  font-style: normal;
+  color: var(--gray);
+  font-size: 0.88rem;
+  margin-bottom: 0.6rem;
+}
+
+.discover-card p {
+  color: var(--black);
+  font-size: 0.93rem;
+  line-height: 1.45;
+  flex: 1;
+  margin-bottom: 0.9rem;
+}
+
+.discover-card .button {
+  align-self: flex-start;
+  font-size: 0.9rem;
+}

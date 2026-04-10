@@ -81,5 +81,31 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card5 card3"
+      "card4 card6 card7 card8";
+  }
+
+  .discover-card figure img {
+    height: 220px;
+  }
+
+  /* Hover effect on images – large screens */
+  .discover-card figure img {
+    transition:
+      transform 0.35s ease,
+      filter 0.35s ease;
+  }
+
+  .discover-card figure img:hover {
+    transform: scale(1.06);
+    filter: opacity(0.5);
+  }
+}
+
 @media (min-width: 60.5em) {
 }
