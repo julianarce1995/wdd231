@@ -1,0 +1,34 @@
+@media (min-width: 900px) {
+  #menu {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    grid-column: auto;
+    padding-right: 1rem;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation a {
+    border-bottom: none;
+    border-radius: 0.6rem;
+  }
+
+  .grid-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  footer {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+}

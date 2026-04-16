@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Movie Hub Explorer discover page with local curated movie list, genre filters, and newsletter signup form."
+    />
+    <meta name="author" content="Julian David Arce Araujo" />
+    <meta
+      property="og:url"
+      content="https://julianarce1995.github.io/wdd231/finalproject/discover.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Movie Hub Explorer | Discover" />
+    <meta
+      property="og:description"
+      content="Browse a curated local movie list and filter by genre."
+    />
+    <meta
+      property="og:image"
+      content="https://julianarce1995.github.io/wdd231/finalproject/images/hero-pattern.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+    <title>Movie Hub Explorer | Discover</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-title">
+        <img
+          src="images/favicon.ico"
+          alt="Movie Hub Explorer icon"
+          loading="lazy"
+        />
+        <span class="brand-name">Movie Hub Explorer</span>
+      </div>
+      <div class="menu">
+        <button type="button" id="menu"></button>
+      </div>
+      <nav class="navbar">
+        <ul class="navigation" id="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="discover.html">Discover</a></li>
+          <li><a href="details.html">Details</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Discover Curated Movies</h1>
+        <p>
+          This section uses local JSON data and lets you keep your preferred
+          genre with localStorage.
+        </p>
+      </section>
+
+      <div id="visit-banner" class="status-box" aria-live="polite"></div>
+
+      <section class="discover-layout">
+        <div>
+          <h2 class="section-title">Movie Catalog</h2>
+          <div class="controls">
+            <label for="genre-filter">Filter by genre</label>
+            <select id="genre-filter" name="genre-filter">
+              <option value="all">All genres</option>
+            </select>
+          </div>
+          <div id="discover-grid" class="grid-cards"></div>
+        </div>
+
+        <aside class="form-section">
+          <h2 class="section-title">Newsletter</h2>
+          <form method="GET" action="thankyou.html" class="newsletter-form">
+            <div>
+              <label for="newsletter-first">First Name</label>
+              <input
+                id="newsletter-first"
+                type="text"
+                name="first"
+                required
+                autocomplete="given-name"
+                title="Your First Name"
+                placeholder="Example: Julian"
+              />
+            </div>
+
+            <div>
+              <label for="newsletter-last">Last Name</label>
+              <input
+                id="newsletter-last"
+                type="text"
+                name="last"
+                required
+                autocomplete="family-name"
+                title="Your Last Name"
+                placeholder="Example: Arce"
+              />
+            </div>
+
+            <div>
+              <label for="newsletter-email">Email</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                required
+                autocomplete="email"
+                title="Your Email"
+                placeholder="moviefan@email.com"
+              />
+            </div>
+
+            <div>
+              <label for="newsletter-genre">Favorite Genre</label>
+              <select id="newsletter-genre" name="favoritegenre" required>
+                <option value="">Select one</option>
+                <option value="Action">Action</option>
+                <option value="Drama">Drama</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Animation">Animation</option>
+                <option value="Thriller">Thriller</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="newsletter-message">Message</label>
+              <textarea
+                id="newsletter-message"
+                name="message"
+                rows="4"
+                title="Your Message"
+                placeholder="Tell us what kind of movies you love"
+              ></textarea>
+            </div>
+
+            <div>
+              <input type="submit" value="Subscribe" />
+            </div>
+          </form>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p>Movie Hub Explorer - WDD231 Final Project</p>
+        <p>
+          © <span id="currentyear"></span>
+          <span id="lastModified"></span>
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+        <a href="https://example.com/video-demo" target="_blank"
+          >Project Video</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

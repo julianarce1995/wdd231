@@ -1,0 +1,23 @@
+@media (min-width: 640px) {
+  .hero {
+    min-height: 290px;
+    padding: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .grid-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .discover-layout {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .details-layout {
+    grid-template-columns: minmax(220px, 300px) 1fr;
+  }
+}
